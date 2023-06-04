@@ -16,7 +16,7 @@ const canvas = document.querySelector('canvas.webgl')
 
 // Scene
 const scene = new THREE.Scene()
-
+scene.background = new THREE.Color( '#72767d' );
 
 const axesHelper = new THREE.AxesHelper()
 // scene.add(axesHelper)
@@ -124,6 +124,7 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setClearColor()
 
 /**
  * Animate
